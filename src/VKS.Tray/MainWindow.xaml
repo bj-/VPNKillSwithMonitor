@@ -1,0 +1,15 @@
+<Window x:Class="VKS.Tray.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VPN Kill Switch" Height="300" Width="420"
+        WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="20">
+        <TextBlock Text="VPN Kill Switch" FontSize="22" FontWeight="SemiBold"/>
+        <TextBlock x:Name="StatusText" Text="Service integration not configured"
+                   Margin="0,16,0,8" FontSize="14"/>
+        <TextBlock Text="This UI is a scaffold. It does not control network filtering."
+                   TextWrapping="Wrap" Foreground="DarkOrange"/>
+        <Separator Margin="0,16"/>
+        <TextBlock Text="Next: authenticated Named Pipes client and tray icon."/>
+    </StackPanel>
+</Window>

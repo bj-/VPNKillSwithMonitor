@@ -1,0 +1,26 @@
+{
+  "vpn": {
+    "healthCheckIntervalMs": 2000,
+    "failureThreshold": 2,
+    "healthCheckTargets": ["1.1.1.1", "9.9.9.9"]
+  },
+  "processGuard": {
+    "enabled": true,
+    "rescanIntervalMs": 2000,
+    "blockedProcesses": [
+      { "name": "app1.exe", "path": null, "sha256": null },
+      { "name": "app2.exe", "path": null, "sha256": null }
+    ]
+  },
+  "network": {
+    "defaultBlock": true,
+    "ipv4": true,
+    "ipv6": true,
+    "allowLoopback": true
+  },
+  "manualUnlock": {
+    "enabled": true,
+    "requireVpnHealthy": true,
+    "requireNoBlockedProcesses": true
+  }
+}
